@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.checker.room"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.checker.room"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.checker.room"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.checker.room"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.checker.room"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.checker.room"
+        }
+    },
+    "dependent_plugins": {}
+}
