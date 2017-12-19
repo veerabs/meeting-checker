@@ -1,6 +1,19 @@
-// Initialize app
-var myApp = new Framework7();
 
+// Code for platform detection
+var isMaterial = Framework7.prototype.device.ios === false;
+var isIos = Framework7.prototype.device.ios === true;
+
+// Initialize app
+var myApp = new Framework7({
+  material: isIos? false : true,
+  template7Pages: true,
+  precompileTemplates: true,
+  swipePanel: 'left',
+  swipePanelActiveArea: '30',
+  swipeBackPage: false,
+  animateNavBackIcon: true,
+  pushState: !!Framework7.prototype.device.os,
+});
 
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $$ = Dom7;
@@ -58,7 +71,5 @@ var captureSuccess = function(mediaFiles) {
 
 // capture error callback
 var captureError = function(error) {
-    console.error('Error code: ' + error.code, null, 'Capture Error');
+          myApp.alert('Error code: ' + error.code, 'Capture Error');
 };
-
-// start audio capture
